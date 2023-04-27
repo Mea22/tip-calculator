@@ -1,0 +1,260 @@
+*{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+body{
+    display: flex;
+    margin: 0px;
+    height: 100vh;
+    background-color: #C5E4E7;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;;
+}
+
+header{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 41px;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: #ffffff;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+}
+.container{
+    padding: 32px 0px;
+}
+.forms{
+    padding: 0px 32px;
+}
+.bill{
+    display: flex;
+    justify-content: space-between;
+}
+.error1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E17457;
+    display: none;
+}
+.input-one,
+.input-two{
+    background-repeat: no-repeat;
+    background-position-x: 16px;
+    background-position-y: 50%;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 0px;
+    color: #00474B;
+    background-color: #F3F9FA;
+    line-height: 35.54px;
+    width: 97%;
+    height: 48px;
+    margin:6px 0px 0px 0px;
+    padding-right:16px;
+    text-align: right;
+}
+input:focus{
+    border: 2px solid #26C2AE;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-one{
+    background-image: url(./icon-dollar.svg);
+}
+.input-two{
+    background-image: url(./icon-person.svg);
+}
+.percentages{
+    margin: 32px 0px;
+}
+.percentages label{
+    font-size: 16px;
+    line-height: 23.7px;
+}
+.percentages div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16.56px;
+}
+.custom{
+    text-align: right;
+    background-color: #F3F9FA;
+    color: #547878;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 128.63px;
+    border-radius: 5px;
+    border: 0px;
+    padding-right: 16px;
+}
+ #buttons button{
+    color: #ffffff;
+    background-color: #00474B;
+}
+#buttons button:hover{
+    background-color: #9FE8DF;
+    color: #00474B;
+}
+#buttons .active{
+    background-color: #26C2AE;
+    color: #00474B;
+}
+.percentages button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 146.63px;
+    height: 48px;
+    border-radius: 5px;
+    border: 0px;
+}
+.num-people{
+    display: flex;
+    justify-content: space-between;
+}
+.error2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E17457;
+    display: none;
+}
+.sum{
+    display: flex;
+    flex-direction: column;
+    background-color: #00474B;
+    border-radius: 15px;
+    margin: 32px 24px 24px;
+}
+.sum-container{
+    margin: 38px 22px 24px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.tip-amount,
+.total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 47px;
+    justify-content: space-between;
+}
+.tip-amount{
+    margin-bottom: 25px;
+}
+.total{
+    margin-bottom: 35px;
+}
+.tip-amount h4,
+.total h4{
+    font-size: 16px;
+    line-height: 23.7px;
+    color: #ffffff;
+    margin: 0px;
+}
+.number{
+    font-size: 32px;
+    line-height: 47.39px;
+    color: #26C2AE;
+}
+
+.person{
+    font-size: 13px;
+    line-height: 19.25px;
+    color: #7F9D9F;
+    margin: 0px
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D686D;
+    height: 48px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 20px;
+    line-height: 29.62px;
+    text-transform: uppercase;
+    color:#00474B;
+    background-color: #0D686D;
+    border: 0px;
+}
+.submit:hover{
+    background-color: #9FE8DF;
+}
+.focused{
+   background-color: #26C2AE;
+}
+@media only screen and (min-width: 1024px){
+    main{
+        margin: 88px 260px 239px;
+        border-radius: 15px;
+        width: 920px;
+    }
+    header{
+        margin: 163px 0px 0px 0px;
+    }
+    .container{
+        display: flex;
+        height: 481px; 
+        padding: 0px;
+    }
+    .forms{
+        margin: 45px 48px 48px 48px;
+        padding: 0px;
+    }
+    input{
+        width: 100%;
+    }
+    .percentages{
+        width: 379px;
+        margin: 40px 0px;
+        margin-right: 0px;
+    }
+    .percentages div{
+        margin-top: 22px;
+        gap: 12px;
+    }
+    .percentages button{
+        width: 117px;
+    }
+    .custom{
+        width: 99px;
+    }
+    .sum{
+        width: 413px;
+        margin: 32px 32px 32px 0px;
+    }
+    .sum-container{
+        margin: 40px;
+    }
+    .number{
+        font-size: 48px;
+        line-height: 71.09px;
+    }
+    .tip-amount{
+        margin-bottom: 53px;
+    }
+    .total{
+        margin-bottom: 134px;
+    }
+    .submit{
+        width: 333px;
+    }
+}

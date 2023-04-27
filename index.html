@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <header>
+        <img src="./resources/logo.svg" alt="logo">
+    </header>
+    <main>
+        <div class="container">
+            <div class="forms">
+                <form id="bill">
+                    <label for="bill" class="bill">Bill <span class="error1">Can't be zero</span></label>
+                    <input type="number" name="bill" placeholder="0" class="input-one" id="value" oninput="getBill(), tipAmount()" required>
+                </form>
+                <div class="percentages">
+                    <label for="text">Select Tip% <br></label>
+                    <div id="buttons">
+                        <button class="button" value="5">5%</button>
+                        <button class="button" value="10">10%</button>
+                        <button class="button" value="15">15%</button>
+                        <button class="button" value="25">25%</button>
+                        <button class="button" value="50">50%</button>
+                        <input type="number" id="custom" class="custom button" placeholder="Custom" oninput="custom(), tipAmount()" max="100"></input>
+                    </div>
+                </div>
+                <form class="num-of-people">
+                    <label for="people" class="num-people">Number of people <span class="error2">Can't be zero</span></label>
+                    <input type="number" name="people" class="input-two" id="people" oninput="getPeople(), tipAmount(), custom()" placeholder="0" required>
+                </form>
+            </div>
+        <form class="sum">
+            <div class="sum-container">
+                <div class="tip-amount">
+                    <div>
+                        <h4>Tip amount</h4>
+                        <p class="person">/person</p>
+                    </div>
+                    <p class="number" id="tip"> $0.00</p>
+                </div>
+                <div class="total">
+                    <div>
+                    <h4>Total</h4>
+                    <p class="person">/person</p>
+                    </div>
+                    <p class="number" id="total"> $0.00</p>
+                </div>
+                    <input type="button" value="reset" class="submit" onclick="resetTip()">
+            </div>
+        </form>
+        </div>
+    </main>
+
+<script src="./bill.js"></script>
+</body>
+</html>
